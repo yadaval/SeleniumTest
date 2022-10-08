@@ -1,0 +1,294 @@
+//1)Task 1: Swaping 2 numbers 
+
+public class swapNumbers{
+
+public static void main (String []args){
+
+int a, b;
+a=10; b= 20;
+
+System.out.println("Before Swaping");
+System.out.println("a value is " + a);
+System.out.println("b value is " + b);
+
+a= a+b;// i.e., a=30;
+b=a-b;// i.e., b=10;
+a=a-b;//i.e., a=20;
+
+System.out.println("After Swaping");
+System.out.println("a value is " + a);
+System.out.println("b value is " + b);
+
+}
+
+
+}
+
+//Task 2: SumOfDigits
+
+public class sumOfDigits{
+
+public void main (String args[]){
+
+int a[] = {10,90.78,111,8989,7876};
+
+int sum=0;
+
+for(int i = 0; i<=4; i++)
+{
+
+sum = sum=a[i];
+
+}
+
+System.out.println("Sum of an Array is : " + sum);
+
+}
+
+}
+
+//Task 3:  Average of below numbers
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a= 10;
+		double b= 90.78;
+		int c=111;
+		int d=8989;
+		int e=7876;
+		
+		double sum = a+b+c+d+e;
+		double average = sum/5;
+		
+		System.out.println(average);
+		
+		
+
+	}}
+
+
+
+//Task 4: Even numbers
+
+public class Strings {
+
+	public static void main(String[] args) {		
+		
+		for(int i=1; i<=100; i++) {
+			
+			if(i%2==0) {
+				System.out.println(i);
+			}
+		}
+
+	}}
+
+
+
+
+
+//Task 6:print all prime numbers from 1 to 1000
+
+public class PrimeNumbers
+{
+
+        public static void main(String [] args)
+        {
+
+          int temp=0;
+     for(int i = 1; i<=1000; i++)
+     {
+
+         for(int j =2; i<=i-1;j++)
+         {
+
+                         if(i%j==0)
+                         {
+                                  temp = temp+1;
+                         }
+         }
+         if(temp==0)
+         {
+             System.out.println(i);
+         }
+         else
+         {
+              temp=0;
+         }
+
+     }
+
+       }
+
+}
+
+//Task 5: Print Odd numbers from 1 to 50
+
+public class OddNumbers{
+
+       public static void main(String[] args){
+
+           int n=50;
+
+           for(int i= 1; i<=n; i=i+2)
+           {
+
+                    System.out.println(i  + " " );
+            }
+
+}
+}
+
+//Task 7: print stars
+
+public class StarsPrinting{
+
+         public static void main(String [] args){
+
+
+                    for(int i =1; i<=6; i++){
+
+                           for(int j =1; j<=i; j++)
+                              {
+
+                                    System.out.print("*");
+                              }
+
+                               System.out.println();
+     
+      }
+   
+   }
+
+ }
+
+//Task 8: Find Highest number
+
+public class HighestNumber{
+
+     public static void main(String [] args )
+{
+              int a[]={78,12,89,55,35};  
+
+         System.out.println("Score above 80 is : "+getLargest(a,4));  
+
+
+          
+}
+
+        public static int getLargest(int[] a, int total)
+{  
+            int temp;  
+                   for (int i = 0; i < total; i++)   
+        {  
+            for (int j = i + 1; j < total; j++)   
+            {  
+                if (a[i] > a[j])   
+                {  
+                    temp = a[i];  
+                    a[i] = a[j];  
+                    a[j] = temp;  
+                }  
+            }  
+        }  
+       return a[total-1];  
+}  
+
+
+}
+
+//Task 9 : Switch statement 
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a= 85;
+		
+		switch(a) {
+		
+		case 12:
+			System.out.println("12 is not present ");
+			break;
+			
+		case 34:
+			System.out.println("34 is not present ");
+			break;
+		
+		case 66:
+			System.out.println("66 is not present ");
+			break;
+		
+		case 85:
+			System.out.println("85 is  present ");
+			break;
+		
+		case 900:
+			System.out.println("900 is not present ");
+			break;
+		
+		
+		}
+
+	}
+}
+
+
+//Task 10: Switch statement
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// String s="yeshu";
+		// s="chandu";
+		// String S = new String("deepak");
+		// S.concat("yeshu");
+		//
+		// int a=10;
+		// a=20;
+		// System.out.println(s + ":"+ a+S);
+		//
+		
+		
+		int a= 85;
+		
+		switch(a) {
+		
+		case 12:
+			System.out.println("12 is not present ");
+			break;
+			
+		case 34:
+			System.out.println("34 is not present ");
+			break;
+		
+		case 66:
+			System.out.println("66 is not present ");
+			break;
+		
+		case 85:
+			System.out.println("85 is  present ");
+			break;
+		
+		case 900:
+			System.out.println("900 is not present ");
+			break;
+		
+		
+		}
+
+	}}
+
+
+
+
+
+
+
+
