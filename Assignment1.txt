@@ -243,19 +243,7 @@ public class Strings {
 public class Strings {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		// String s="yeshu";
-		// s="chandu";
-		// String S = new String("deepak");
-		// S.concat("yeshu");
-		//
-		// int a=10;
-		// a=20;
-		// System.out.println(s + ":"+ a+S);
-		//
-		
-		
+		// TODO Auto-generated method stub	
 		int a= 85;
 		
 		switch(a) {
