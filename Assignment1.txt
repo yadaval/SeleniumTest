@@ -207,33 +207,23 @@ public class Strings {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a= 85;
+		System.out.println("Hellow world");
 		
-		switch(a) {
+		int a[]= {12,34,66,85,900};
 		
-		case 12:
-			System.out.println("12 is not present ");
-			break;
+		for(int values:a) {
 			
-		case 34:
-			System.out.println("34 is not present ");
-			break;
-		
-		case 66:
-			System.out.println("66 is not present ");
-			break;
-		
-		case 85:
-			System.out.println("85 is  present ");
-			break;
-		
-		case 900:
-			System.out.println("900 is not present ");
-			break;
-		
-		
-		}
+			if(values==85) {
+				
+				System.out.println("Number 85 exists");
+				break;
+				
+			}else {
+				System.out.println("Number  " + values + " did not match with 85");
 
+				
+			}
+		}
 	}
 }
 
@@ -244,31 +234,19 @@ public class Strings {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
-		int a= 85;
-		
-		switch(a) {
-		
-		case 12:
-			System.out.println("12 is not present ");
-			break;
-			
-		case 34:
-			System.out.println("34 is not present ");
-			break;
-		
-		case 66:
-			System.out.println("66 is not present ");
-			break;
-		
-		case 85:
-			System.out.println("85 is  present ");
-			break;
-		
-		case 900:
-			System.out.println("900 is not present ");
-			break;
-		
-		
+		String s[] = { "Java", "Javascript", "python", "Mukesh", "Selenium" };
+
+		for (String names : s) {
+
+			if (names.equals("Selenium")) {
+
+				System.out.println("Selenium exists");
+				break;
+			} else {
+
+				System.out.println("Name : " + names + " doesnot match");
+
+			}
 		}
 
 	}}
