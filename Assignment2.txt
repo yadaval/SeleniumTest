@@ -1,0 +1,96 @@
+package iNeuronAssignemnt2;
+
+import java.lang.reflect.Array;
+
+public class Trainer {
+
+	String name;
+	String department, email, id;
+
+	public Trainer(String name1, String department1, String email1, String id1) {
+
+		name = name1;
+		department = department1;
+		email = email1;
+		id = id1;
+
+	}
+
+	void display() {
+
+		System.out.println(name);
+		System.out.println(department);
+
+		System.out.println(email);
+
+		System.out.println(id);
+
+	}
+
+	String a[] = { name, department, email, id };
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Trainer trainer1 = new Trainer("Mukesh", "Testing", "mukesh@gmail.com", "1");
+		Trainer trainer2 = new Trainer("Hitesh", "Dev", "mukesh@gmail.com", "2");
+		Trainer trainer3 = new Trainer("Mukesh", "DevOps", "mukesh@gmail.com", "3");
+
+		trainer1.display();
+		trainer2.display();
+		trainer3.display();
+
+		System.out.println("Trainer 1 can teach  " + trainer1.department);
+
+		System.out.println("Trainer 1 can teach  " + trainer2.department);
+
+		System.out.println("Trainer 1 can teach  " + trainer3.department);
+
+	}
+
+}
+
+
+Task 3:
+
+
+package iNeuronAssignemnt2;
+
+import java.util.Scanner;
+
+public class Studentsinformation {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Please Enter no. of students ");
+
+		int number = sc.nextInt();
+
+//		String details = sc.toString();
+
+		for (int i = 0; i < number; i++) {
+
+			System.out.println("Please Enter name ");
+
+			String name = sc.next();
+
+			System.out.println("Please Enter Email ");
+
+			String email = sc.next();
+
+		}
+
+		System.out.println("please enter which student details you are looking for");
+
+		String studentDetails= sc.next();
+		
+		char str=studentDetails.charAt(number);		
+		
+
+		System.out.println(str);
+
+	}
+
+}
