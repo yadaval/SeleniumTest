@@ -27,12 +27,11 @@ public class Trainer {
 
 	}
 
-	String a[] = { name, department, email, id };
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Trainer trainer1 = new Trainer("Mukesh", "Testing", "mukesh@gmail.com", "1");
+		/*Trainer trainer1 = new Trainer("Mukesh", "Testing", "mukesh@gmail.com", "1");
 		Trainer trainer2 = new Trainer("Hitesh", "Dev", "mukesh@gmail.com", "2");
 		Trainer trainer3 = new Trainer("Mukesh", "DevOps", "mukesh@gmail.com", "3");
 
@@ -45,6 +44,24 @@ public class Trainer {
 		System.out.println("Trainer 1 can teach  " + trainer2.department);
 
 		System.out.println("Trainer 1 can teach  " + trainer3.department);
+		*/
+		//storing elements in an array
+		Trainer[] array = new Trainer[3];
+
+		array[0] = new Trainer("Mukesh", "Testing", " mukesh@gmail.com", "1");
+
+		array[1] = new Trainer("Hitesh", "Dev", "hitesh@gmail.com", "2");
+
+		array[2] = new Trainer("Mukesh", "DevOps", "mukesh@gmail.com", "3");
+
+		for (int i = 0; i < array.length; i++) {
+
+			array[i].display();
+
+			System.out.println("  ");
+		}
+
+
 
 	}
 
