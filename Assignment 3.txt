@@ -1,0 +1,129 @@
+Task 1:
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrintNumbersUsingForLoop {
+
+	public static void main(String[] args) {
+
+		List<Integer> list = new ArrayList<Integer>();
+
+		list.add(12);
+		list.add(25);
+		list.add(35);
+		list.add(76);
+
+
+		System.out.println(list);
+
+		for (int i = 0; i < list.size(); i++) {
+
+			System.out.println(list.get(i));
+		}
+
+	}
+
+}
+Task 2:  
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrintNumbersUsingForEach {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Integer> list = new ArrayList<Integer>();
+
+		list.add(22);
+		list.add(35);
+		list.add(31);
+		list.add(7);
+
+		// it will print like an array, if we want
+		// to print in one column we can use for, for each and iterator
+		System.out.println(list);
+
+		for (int listItems : list) {
+
+			System.out.println(listItems);
+		}
+
+	}
+
+}
+
+
+Task 3:
+
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class PrintNumbersUsingIterator {
+
+	public static void main(String[] args) {
+
+		List<Integer> list = new ArrayList<Integer>();
+		
+		list.add(22);
+		list.add(35);
+		list.add(31);
+		list.add(7);
+		
+		
+		Iterator iterator = list.iterator();
+		
+		while(iterator.hasNext()) {
+			
+			System.out.println(iterator.next());
+		}
+
+
+		
+		
+	}
+
+}
+
+Task 4: 
+
+import java.util.Scanner;
+
+public class MobileList {
+
+	static String names="";
+	
+	static boolean result= false;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		
+		for(int i=0; i<=4; i++) {
+			
+			System.out.println("Enter Name");
+			 names = sc.next();
+		}
+		
+		switch(names) {
+		
+		case  1:
+			
+			if(names.equals("Mobile")) {
+				
+				System.out.println("Mobile exists: " + result);
+				break;
+			}
+			
+			
+			
+			
+		}
+		
+	}
